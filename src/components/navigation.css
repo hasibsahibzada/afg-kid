@@ -1,0 +1,19 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: beige;
+}
+
+.right {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+span {
+    padding-left: 20px;
+}
+
+.left {
+    flex: 0 0 auto;
+}
