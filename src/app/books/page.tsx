@@ -1,5 +1,16 @@
-export default function Page() {
+import ListItem from '@/components/list/ListItem';
+import { listOfBooks } from '@/data/book';
+
+const Page = () => {
     return (
-        <div>This contains the book list</div>
+        <div>
+            {
+                listOfBooks.map((book) => (
+                    <ListItem key={book.id} book={book} />
+                ))
+            }
+        </div>
     );
 }
+
+export default Page;
