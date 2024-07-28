@@ -1,3 +1,8 @@
+
+export interface Page {
+    paragraphs: string[];
+}
+
 export interface Book {
     id: number;
     title: string;
@@ -5,4 +10,5 @@ export interface Book {
     publicationDate: string;
     genre: string;
     description: string;
+    pages: Page[];
 }

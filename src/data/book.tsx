@@ -7,6 +7,9 @@ export const listOfBooks: Book[] = [{
     publicationDate: '2022-01-01',
     genre: 'Fiction',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    pages: [{
+        paragraphs: ['Page 1 paragraph 1', 'Page 1 paragraph 2', "Page 1 paragraph 3"]
+    }]
 },
     {
         id: 2,
@@ -15,6 +18,18 @@ export const listOfBooks: Book[] = [{
         publicationDate: '2021-02-02',
         genre: 'Non-Fiction',
         description: 'Duis euismod nulla vel libero viverra, at placerat velit semper.',
+        pages: [{
+            paragraphs: ['Page 1 paragraph 1', 'Page 1 paragraph 2', "Page 1 paragraph 3"],
+        },
+            {
+                paragraphs: ['Page 1 paragraph 1', 'Page 1 paragraph 2', "Page 1 paragraph 3"],
+            },
+            {
+                paragraphs: ['Page 1 paragraph 1', 'Page 1 paragraph 2', "Page 1 paragraph 3"],
+            },
+            {
+                paragraphs: ['Page 1 paragraph 1', 'Page 1 paragraph 2', "Page 1 paragraph 3"],
+            }]
     },
     {
         id: 3,
@@ -23,5 +38,8 @@ export const listOfBooks: Book[] = [{
         publicationDate: '2020-03-03',
         genre: 'Biography',
         description: 'Nullam id velit vel ipsum placerat consequat.',
+        pages: [{
+            paragraphs: ['Page 1 paragraph 1', 'Page 1 paragraph 2', "Page 1 paragraph 3"]
+        }]
     }];
 

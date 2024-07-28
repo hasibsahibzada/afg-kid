@@ -4,7 +4,7 @@ import Link from 'next/link';
 const ListItem = (props: any) => {
     const { book } = props;
     return (
-        <Link href={`/books/book/${book.id}`}>
+        <Link href={`/books/${book.id}`}>
             <div key={book.id} id="book">
                 <h2>{book.title}</h2>
                 <p>Author: {book.author}</p>
