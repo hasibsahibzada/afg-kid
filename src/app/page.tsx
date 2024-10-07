@@ -1,9 +1,18 @@
-import Navigation from '../components/Navigation';
+import {NextPageContext} from "next";
 
-export default function Home() {
-  return (
-    <main >
-      <h1>This is Afghan kid app</h1>
-    </main>
-  );
+const Home = ()  =>{
+    return (
+        <main >
+            <h1>This is Afghan kid test</h1>
+        </main>
+    );
 }
+
+Home.getInitialProps = async (ctx: NextPageContext) => {
+    const res = await fetch('https://api.github.com/repos/vercel/next.js')
+    const json = await res.json()
+    debugger
+    return { stars: json.stargazers_count }
+}
+
+export default Home;

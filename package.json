@@ -10,14 +10,13 @@
     "lint": "next lint"
   },
   "engines": {
-    "node": "18.17.0"
+    "node": "22.8.0"
   },
   "dependencies": {
     "firebase": "^10.12.2",
     "next": "14.1.4",
     "react": "^18",
-    "react-dom": "^18",
-    "react-pageflip": "^2.0.3"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",

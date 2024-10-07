@@ -1,3 +1,7 @@
-.page {
-    background-color: burlywood;
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 24px;
 }

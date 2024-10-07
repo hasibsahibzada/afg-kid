@@ -1,0 +1,36 @@
+.book {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-left: 1px gray solid;
+}
+
+.body {
+    flex: 1 1 auto;
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.paragraph {
+    z-index: 1;
+    p {
+        color: white;
+    }
+}
+
+.footer {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image {
+    position: absolute;
+    width: 80%;
+    margin-right: 20px;
+    z-index: 0;
+}

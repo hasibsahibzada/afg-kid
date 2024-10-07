@@ -1,5 +1,6 @@
 
 export interface Page {
+    image?: string;
     paragraphs: string[];
 }
 
